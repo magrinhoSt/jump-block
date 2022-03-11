@@ -1,0 +1,160 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body ,html{
+   background: #000000
+}
+
+canvas{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  background: #222;
+  image-rendering: pixelated;
+}
+
+
+
+.menu1{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  color: white;
+ 
+}
+
+.menu1 div{
+  position:  absolute;
+  left: 38%;
+  top: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.m1{
+  width: 25px;
+  height: 50px;
+  font-size: 50px;
+  position: relative;
+  color: white;
+  padding: 10px;
+}
+
+.m1:hover{
+   text-shadow: 1px 3px 0 #008427;
+   font-size: 60px;
+}
+
+.m1:hover:before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    width: 30px;
+    background-color: red;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%, 10% 50%);
+    animation: pot 0.35s infinite alternate linear;
+  }
+  
+  @keyframes pot{
+    0%  {left: -55px;}
+    100%{left: -75px;}
+  }
+  
+
+
+.menu2{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: #222;
+  color: white;
+  display: none;
+}
+
+.menu2 div{
+  position:  absolute;
+  left: 38%;
+  top: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+
+
+#bootL{
+  position: absolute;
+  left: 50%;
+  top: 50%; 
+  transform: translate(-50%, -50%);
+  background: #FFBF42;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 1px;
+  color: white;
+  font-size: 15px;
+  display: none;
+}
+
+
+
+
+.score{
+  position: absolute;
+  width:  350px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #4D4D4D;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  display: none
+}
+
+.score #s1{
+    color: #FFAC00;
+}
+
+.score #s2{
+    font-size: 30px;
+    color: white;
+}
+
+.score:hover{
+  
+}
+
+.score button{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+
+.score div{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #676A8600;
+  border: .5px solid #F4FFF2;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.score div p{
+   color: white;
+   text-align: center;
+   font-size: 12px;
+}
