@@ -134,6 +134,6 @@ game = {
 }
 
 window.onload = function(){
-  bg.src = "/img/m1.png";
+  bg.src = "m1.png";
   game.init();
 }
